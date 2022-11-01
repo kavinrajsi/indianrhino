@@ -1,18 +1,20 @@
-{% style %}
+{%- style -%}
+
 :root{
-    --padding-top: {{section-gap-mobile-top}}px;
-    --padding-bottom: {{section-gap-mobile-bottom}}px;
+    --padding-top: {{ section.settings.section-gap-mobile-top }}px;
+    --padding-bottom: {{ section.settings.section-gap-mobile-bottom }}px;
     @media (min-width: 768px) {
-        --padding-top: {{section-gap-tablet-top}}px;
-        --padding-bottom: {{section-gap-tablet-bottom}}px;
+        --padding-top: {{ section.settings.section-gap-tablet-top }}px;
+        --padding-bottom: {{ section.settings.section-gap-tablet-bottom }}px;
     }
     @media (min-width: 768px) {
-        --padding-top: {{section-gap-desktop-top}}px;
-        --padding-bottom: {{section-gap-desktop-bottom}}px;
+        --padding-top: {{ section.settings.section-gap-desktop-top }}px;
+        --padding-bottom: {{ section.settings.section-gap-desktop-bottom }}px;
     }
 
 }
-{% endstyle %}
+{%- endstyle -%}
+
 <div class="area-band" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
     <div class="area-image">
         {% for block in section.blocks %}
@@ -28,6 +30,7 @@
         <p>{{ section.settings.richtext }}</p>
     </div>
 </div>
+
 {% schema %}
 {
     "name": "Text Image",
@@ -41,7 +44,7 @@
             "label": "Section Title"
         },
         {
-            "type": "text",
+            "type": "inline_richtextAnchor",
             "id": "richtext",
             "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
             "label": "Section Content"
@@ -65,8 +68,8 @@
             "step": 2,
             "unit": "px",
             "default": 8
-        }
-{
+        },
+        {
             "type": "range",
             "id": "section-gap-tablet-top",
             "label": "Section space to for tablet",
@@ -117,6 +120,11 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "Section Image"
+                },
+                {
+                    "type": "text",
+                    "id": "image_text",
+                    "label": "Text Over Image"
                 }
             ]
         }

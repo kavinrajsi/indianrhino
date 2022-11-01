@@ -16,5 +16,107 @@
                 "label": "Favicon"
             }
         ]
+    },
+    {
+        "name": "Typography",
+        "settings": [
+            {
+                "type": "font_picker",
+                "id": "type_header_font1",
+                "default": "noto_serif_n4",
+                "label": "Heading 1"
+            },
+            {
+                "type": "number",
+                "id": "heading_scale_font1",
+                "label": "Header 1 Font Size",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "font_picker",
+                "id": "type_header_font2",
+                "default": "noto_serif_n4",
+                "label": "Heading 2"
+            },
+            {
+                "type": "number",
+                "id": "heading_scale_font2",
+                "label": "Header 2 Font Size",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "font_picker",
+                "id": "type_header_font3",
+                "default": "noto_serif_n4",
+                "label": "Heading 3"
+            },
+            {
+                "type": "number",
+                "id": "heading_scale_font3",
+                "label": "Header 3 Font Size",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "font_picker",
+                "id": "type_header_font4",
+                "default": "noto_serif_n4",
+                "label": "Heading 4"
+            },
+            {
+                "type": "number",
+                "id": "heading_scale_font5",
+                "label": "Header 5 Font Size",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "font_picker",
+                "id": "type_header_font6",
+                "default": "noto_serif_n4",
+                "label": "Heading 6"
+            },
+            {
+                "type": "number",
+                "id": "heading_scale_font4",
+                "label": "Header 6 Font Size",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "font_picker",
+                "id": "body_text_font",
+                "label": "Body Font",
+                "default": "work_sans_n4"
+            },
+            {
+                "type": "number",
+                "id": "body_font_size",
+                "label": "Body Font Size",
+                "default": 1,
+                "unit": "rem"
+            }
+        ]
+    },
+    {
+        "name": "Typography Space",
+        "settings": [
+            {
+                "type": "number",
+                "id": "space_after_heading",
+                "label": "Space after heading",
+                "default": 1,
+                "unit": "rem"
+            },
+            {
+                "type": "number",
+                "id": "space_after_paragraph",
+                "label": "Space after paragraph",
+                "default": 1,
+                "unit": "rem"
+            }
+        ]
     }
 ]

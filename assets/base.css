@@ -373,11 +373,6 @@ a:not([href]):not([class]):hover {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
-  .area-band {
-    max-width: 720px;
-  }
-}
 @media (min-width: 992px) {
   .area-band {
     max-width: 960px;

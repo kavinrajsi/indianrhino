@@ -1,0 +1,65 @@
+<div class="card" style="padding-top: {{ section.settings.section-gap-top }}; padding-bottom: {{ section.settings.section-gap-bottom }};">
+    {{ section.settings.heading }}
+    {{ section.settings.richtext }}
+    {% for block in section.blocks %}
+    {% if block.settings.image %}
+    {{ block.settings.image | image_url : width: 264, height: 290, crop: 'top' | image_tag : alt: block.settings.image.alt,
+    loading: 'lazy', class: "instagram-item-image", loading: "lazy" }}
+    {% endif %}
+    {% endfor %}
+</div>
+{% schema %}
+{
+    "name": "Text Image",
+    "class": "homepage-section",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Section Title",
+            "label": "Section Title"
+        },
+        {
+            "type": "text",
+            "id": "richtext",
+            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+            "label": "Section Content"
+        },
+        {
+            "type": "range",
+            "id": "section-gap-top",
+            "label": "Section space top",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        },
+        {
+            "type": "range",
+            "id": "section-gap-bottom",
+            "label": "Section space bottom",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Section Image",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Section Image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

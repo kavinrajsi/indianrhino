@@ -15,14 +15,11 @@
 }
 {%- endstyle -%}
 
-<div class="area-band" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
+<div class="area-band" id="shopify-section-[id]" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
     <div class="area-image">
         {% for block in section.blocks %}
-        {% if block.settings.image %}
-        {{ block.settings.image | image_url : width: 264, height: 290, crop: 'top' | image_tag : alt:
-        block.settings.image.alt,
-        loading: 'lazy', class: "instagram-item-image", loading: "lazy" }}
-        {% endif %}
+        {{ block.settings.image | image_url: width: 200 | image_tag }}
+        {{ block.settings.image_text }}
         {% endfor %}
     </div>
     <div class="area-text">

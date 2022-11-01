@@ -396,6 +396,13 @@ a:not([href]):not([class]):hover {
   text-align: center;
   padding-bottom: 40px;
 }
+@media (min-width: 576px) {
+  .area-text {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (min-width: 992px) {
   .area-text {
     text-align: left;

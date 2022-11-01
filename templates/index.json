@@ -11,25 +11,29 @@
         "841eab2f-f747-46a1-a2e5-b01cb395c81d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1newSkincare.jpg"
+            "image": "shopify:\/\/shop_images\/1newSkincare.jpg",
+            "image_text": ""
           }
         },
         "74fd70dd-a99e-405a-94ba-137330648cc5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2newHiarcare.jpg"
+            "image": "shopify:\/\/shop_images\/2newHiarcare.jpg",
+            "image_text": ""
           }
         },
         "8f452b6a-602d-490c-97ee-732a70edf20a": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3newBodycare.jpg"
+            "image": "shopify:\/\/shop_images\/3newBodycare.jpg",
+            "image_text": ""
           }
         },
         "78b1fbf7-8f53-43fa-8d59-bff111e074cc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4newMakeup.jpg"
+            "image": "shopify:\/\/shop_images\/4newMakeup.jpg",
+            "image_text": ""
           }
         }
       },
@@ -40,10 +44,14 @@
         "78b1fbf7-8f53-43fa-8d59-bff111e074cc"
       ],
       "settings": {
-        "heading": "When Earth Meets Beauty",
-        "richtext": "Experience our curated collection of sustainable beauty brands that brings you beauty solutions born out of Nature's best.",
-        "section-gap-top": 8,
-        "section-gap-bottom": 8
+        "heading": "Discover our Products",
+        "description": "It is a long establaished fact that a the reader will page a when looking at its.",
+        "section-gap-desktop-top": 8,
+        "section-gap-desktop-bottom": 8,
+        "section-gap-tablet-top": 8,
+        "section-gap-tablet-bottom": 8,
+        "section-gap-mobile-top": 8,
+        "section-gap-mobile-bottom": 8
       }
     }
   },

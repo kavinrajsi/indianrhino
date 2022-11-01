@@ -392,16 +392,12 @@ a:not([href]):not([class]):hover {
   }
 }
 .area-text {
-  padding: 14px;
+  padding: 0px 14px 14px;
   text-align: center;
-  padding-bottom: 40px;
-}
-@media (min-width: 576px) {
-  .area-text {
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding-bottom: 20px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 992px) {
   .area-text {
@@ -415,7 +411,7 @@ a:not([href]):not([class]):hover {
   font-family: "Gotham", sans-serif;
   font-size: 1.75rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .area-text h2 {
     max-width: 280px;
     font-size: 40px;
@@ -425,7 +421,7 @@ a:not([href]):not([class]):hover {
 .area-text p {
   font-family: "Open Sans";
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .area-text p {
     max-width: 280px;
     font-size: 22px;
@@ -441,6 +437,11 @@ a:not([href]):not([class]):hover {
   overflow-x: scroll;
   padding-left: 14px;
   padding-right: 14px;
+}
+@media (min-width: 768px) {
+  .area-image {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (min-width: 992px) {
   .area-image {

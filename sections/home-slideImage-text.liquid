@@ -15,16 +15,18 @@
 }
 {%- endstyle -%}
 
-<div class="area-band" id="shopify-section-[id]" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
-    <div class="area-image">
-        {% for block in section.blocks %}
-        {{ block.settings.image | image_url: width: 200 | image_tag }}
-        {{ block.settings.image_text }}
-        {% endfor %}
-    </div>
+<div class="area-band" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
     <div class="area-text">
         <h2>{{ section.settings.heading }}</h2>
         <p>{{ section.settings.description }}</p>
+    </div>
+    <div class="area-image">
+        {% for block in section.blocks %}
+        <div class="area-image-block">
+        {{ block.settings.image | image_url: width: 200 | image_tag: alt: block.settings.image.alt, loading: 'lazy' }}
+        <span class="area-image-block-title">{{ block.settings.image_text }}</span>
+    </div>
+        {% endfor %}
     </div>
 </div>
 

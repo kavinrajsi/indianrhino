@@ -1,12 +1,32 @@
-<div class="card" style="padding-top: {{ section.settings.section-gap-top }}; padding-bottom: {{ section.settings.section-gap-bottom }};">
-    {{ section.settings.heading }}
-    {{ section.settings.richtext }}
-    {% for block in section.blocks %}
-    {% if block.settings.image %}
-    {{ block.settings.image | image_url : width: 264, height: 290, crop: 'top' | image_tag : alt: block.settings.image.alt,
-    loading: 'lazy', class: "instagram-item-image", loading: "lazy" }}
-    {% endif %}
-    {% endfor %}
+{% style %}
+:root{
+    --padding-top: {{section-gap-mobile-top}}px;
+    --padding-bottom: {{section-gap-mobile-bottom}}px;
+    @media (min-width: 768px) {
+        --padding-top: {{section-gap-tablet-top}}px;
+        --padding-bottom: {{section-gap-tablet-bottom}}px;
+    }
+    @media (min-width: 768px) {
+        --padding-top: {{section-gap-desktop-top}}px;
+        --padding-bottom: {{section-gap-desktop-bottom}}px;
+    }
+
+}
+{% endstyle %}
+<div class="area-band" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
+    <div class="area-image">
+        {% for block in section.blocks %}
+        {% if block.settings.image %}
+        {{ block.settings.image | image_url : width: 264, height: 290, crop: 'top' | image_tag : alt:
+        block.settings.image.alt,
+        loading: 'lazy', class: "instagram-item-image", loading: "lazy" }}
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="area-text">
+        <h2>{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.richtext }}</p>
+    </div>
 </div>
 {% schema %}
 {
@@ -28,8 +48,8 @@
         },
         {
             "type": "range",
-            "id": "section-gap-top",
-            "label": "Section space top",
+            "id": "section-gap-desktop-top",
+            "label": "Section space to for desktop",
             "min": 8,
             "max": 120,
             "step": 2,
@@ -38,8 +58,48 @@
         },
         {
             "type": "range",
-            "id": "section-gap-bottom",
-            "label": "Section space bottom",
+            "id": "section-gap-desktop-bottom",
+            "label": "Section space bottom for desktop",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        }
+{
+            "type": "range",
+            "id": "section-gap-tablet-top",
+            "label": "Section space to for tablet",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        },
+        {
+            "type": "range",
+            "id": "section-gap-tablet-bottom",
+            "label": "Section space bottom for tablet",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        },
+        {
+            "type": "range",
+            "id": "section-gap-mobile-top",
+            "label": "Section space to for mobile",
+            "min": 8,
+            "max": 120,
+            "step": 2,
+            "unit": "px",
+            "default": 8
+        },
+        {
+            "type": "range",
+            "id": "section-gap-mobile-bottom",
+            "label": "Section space bottom for mobile",
             "min": 8,
             "max": 120,
             "step": 2,

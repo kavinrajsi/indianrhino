@@ -1,1 +1,23 @@
-@import 'reset';
+@import "reset";
+
+.area {
+  &-band {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-image {
+    display: grid;
+    gap: 20px;
+  }
+  &-text {
+    h2 {
+      font-size: 40px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+      line-height: normal;
+    }
+  }
+}

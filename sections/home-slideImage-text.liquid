@@ -23,9 +23,6 @@
     <div class="area-image">
         {% for block in section.blocks %}
         <div class="area-image-block">
-            <img class="lazyload" data-sizes="auto"
-          data-src="{{block.settings.image.src | image_url: width:276, height: 446, format: 'pjpg' }}"
-          alt="{{block.settings.image.alt}}">
         {{ block.settings.image | image_url: width: 276, height: 446, format: 'pjpg' | image_tag: alt: block.settings.image.alt, loading: 'lazy' }}
         <span class="area-image-block-title">{{ block.settings.image_text }}</span>
     </div>

@@ -400,6 +400,7 @@ a:not([href]):not([class]):hover {
   .area-text {
     text-align: left;
     padding: 0;
+    padding-top: 40px;
     padding-left: 30px;
   }
 }

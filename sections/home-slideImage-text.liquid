@@ -32,107 +32,107 @@
 
 {% schema %}
 {
-    "name": "Text Image",
-    "class": "homepage-section",
-    "tag": "section",
-    "settings": [
+  "name": "Text Image",
+  "class": "homepage-section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Section Title",
+      "label": "Section Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      "label": "Section Content"
+    },
+    {
+      "type": "range",
+      "id": "section-gap-desktop-top",
+      "label": "Section space to for desktop",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "section-gap-desktop-bottom",
+      "label": "Section space bottom for desktop",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "section-gap-tablet-top",
+      "label": "Section space to for tablet",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "section-gap-tablet-bottom",
+      "label": "Section space bottom for tablet",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "section-gap-mobile-top",
+      "label": "Section space to for mobile",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "section-gap-mobile-bottom",
+      "label": "Section space bottom for mobile",
+      "min": 8,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Section Image",
+      "limit": 4,
+      "settings": [
         {
-            "type": "text",
-            "id": "heading",
-            "default": "Section Title",
-            "label": "Section Title"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Section Image"
         },
         {
-            "type": "inline_richtext",
-            "id": "description",
-            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-            "label": "Section Content"
-        },
-        {
-            "type": "range",
-            "id": "section-gap-desktop-top",
-            "label": "Section space to for desktop",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
-        },
-        {
-            "type": "range",
-            "id": "section-gap-desktop-bottom",
-            "label": "Section space bottom for desktop",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
-        },
-        {
-            "type": "range",
-            "id": "section-gap-tablet-top",
-            "label": "Section space to for tablet",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
-        },
-        {
-            "type": "range",
-            "id": "section-gap-tablet-bottom",
-            "label": "Section space bottom for tablet",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
-        },
-        {
-            "type": "range",
-            "id": "section-gap-mobile-top",
-            "label": "Section space to for mobile",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
-        },
-        {
-            "type": "range",
-            "id": "section-gap-mobile-bottom",
-            "label": "Section space bottom for mobile",
-            "min": 8,
-            "max": 120,
-            "step": 2,
-            "unit": "px",
-            "default": 8
+          "type": "text",
+          "id": "image_text",
+          "label": "Text Over Image"
         }
-    ],
-    "blocks": [
-        {
-            "type": "image",
-            "name": "Section Image",
-            "limit": 4,
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Section Image"
-                },
-                {
-                    "type": "text",
-                    "id": "image_text",
-                    "label": "Text Over Image"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Image Text",
-            "category": "custom"
-        }
-    ]
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Text",
+      "category": "custom"
+    }
+  ]
 }
 {% endschema %}

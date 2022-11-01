@@ -5,7 +5,7 @@ assign body_font = settings.body_text_font
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 
-<head>
+<head>{% render 'pagefly-head' %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -139,7 +139,12 @@ assign body_font = settings.body_text_font
         }
     </script>
 
-</head>
+
+<script>
+window.mlvedaShopCurrency = "{{ shop.currency }}";
+window.shopCurrency = "{{ shop.currency }}";
+window.supported_currencies = "{{ settings.mlvedaACS_supportedCurrencies }}";
+</script></head>
 
 <body class="template-{{ template | split : '.' | first }}">
     <!--[if IE]>
@@ -310,6 +315,6 @@ assign body_font = settings.body_text_font
         </main>
     </section>
 
-</body>
+{% include 'mlveda-currencies-switcher' %}{% include 'mlveda-currencies' %}{% include 'mlveda-flag' %}{% include 'mlveda-currencies-style' %}</body>
 
 </html>

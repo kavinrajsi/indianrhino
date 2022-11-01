@@ -46,11 +46,18 @@ a:not([href]):not([class]):hover {
     @media (min-width: 1200px) {
       max-width: 1140px;
     }
-  }
+
+
   &-text {
     padding: 14px;
     text-align: center;
     padding-bottom: 40px;
+    
+    @media (min-width: 576px) {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     @media (min-width: 992px) {
       text-align: left;
       padding: 0;
@@ -93,6 +100,8 @@ a:not([href]):not([class]):hover {
       gap: 24px;
     }
     &-block {
+      position: relative;
+      overflow: hidden;
       @media (min-width: 992px) {
         &:nth-child(1) {
           grid-area: 2 / 1 / 4 / 2;
@@ -107,8 +116,6 @@ a:not([href]):not([class]):hover {
         &:nth-child(4) {
           grid-area: 3 / 2 / 5 / 3;
         }
-        position: relative;
-        overflow: hidden;
       }
       &-image {
         vertical-align: middle;

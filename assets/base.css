@@ -444,11 +444,11 @@ a:not([href]):not([class]):hover {
     gap: 24px;
   }
 }
+.area-image-block {
+  position: relative;
+  overflow: hidden;
+}
 @media (min-width: 992px) {
-  .area-image-block {
-    position: relative;
-    overflow: hidden;
-  }
   .area-image-block:nth-child(1) {
     grid-area: 2/1/4/2;
   }

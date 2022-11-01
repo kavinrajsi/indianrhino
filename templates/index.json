@@ -12,36 +12,36 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/1newSkincare.jpg",
-            "image_text": ""
+            "image_text": "Skincare"
           }
         },
         "74fd70dd-a99e-405a-94ba-137330648cc5": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/2newHiarcare.jpg",
-            "image_text": ""
-          }
-        },
-        "8f452b6a-602d-490c-97ee-732a70edf20a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3newBodycare.jpg",
-            "image_text": ""
+            "image_text": "Haircare"
           }
         },
         "78b1fbf7-8f53-43fa-8d59-bff111e074cc": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/4newMakeup.jpg",
-            "image_text": ""
+            "image_text": "Make up"
+          }
+        },
+        "8f452b6a-602d-490c-97ee-732a70edf20a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3newBodycare.jpg",
+            "image_text": "Bodycare"
           }
         }
       },
       "block_order": [
         "841eab2f-f747-46a1-a2e5-b01cb395c81d",
         "74fd70dd-a99e-405a-94ba-137330648cc5",
-        "8f452b6a-602d-490c-97ee-732a70edf20a",
-        "78b1fbf7-8f53-43fa-8d59-bff111e074cc"
+        "78b1fbf7-8f53-43fa-8d59-bff111e074cc",
+        "8f452b6a-602d-490c-97ee-732a70edf20a"
       ],
       "settings": {
         "heading": "Discover our Products",

@@ -46,12 +46,12 @@
       "settings": {
         "heading": "Discover our Products",
         "description": "It is a long establaished fact that a the reader will page a when looking at its.",
-        "section-gap-desktop-top": 8,
-        "section-gap-desktop-bottom": 8,
-        "section-gap-tablet-top": 8,
-        "section-gap-tablet-bottom": 8,
-        "section-gap-mobile-top": 8,
-        "section-gap-mobile-bottom": 8
+        "section-gap-desktop-top": 48,
+        "section-gap-desktop-bottom": 48,
+        "section-gap-tablet-top": 24,
+        "section-gap-tablet-bottom": 24,
+        "section-gap-mobile-top": 24,
+        "section-gap-mobile-bottom": 24
       }
     }
   },

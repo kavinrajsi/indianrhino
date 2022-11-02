@@ -2,6 +2,9 @@
   "current": {
     "favicon": "shopify:\/\/shop_images\/android-chrome-512x512.png",
     "space_after_heading": 0.5,
+    "checkout_logo_image": "shopify:\/\/shop_images\/android-chrome-512x512.png",
+    "checkout_logo_position": "left",
+    "checkout_input_background_color_mode": "white",
     "content_for_index": [
 
     ]

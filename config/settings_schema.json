@@ -18,6 +18,17 @@
     ]
   },
   {
+    "name": "Navigation Bar Colors Settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "navbar_color",
+        "label": "NavBar Background Color",
+        "default": "#fff"
+      }
+    ]
+  },
+  {
     "name": "Typography",
     "settings": [
       {

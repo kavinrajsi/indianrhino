@@ -33,63 +33,9 @@
     "settings": [
       {
         "type": "font_picker",
-        "id": "type_header_font1",
-        "default": "noto_serif_n4",
-        "label": "Heading 1"
-      },
-      {
-        "type": "number",
-        "id": "heading_scale_font1",
-        "label": "Header 1 Font Size",
-        "default": 1
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font2",
-        "default": "noto_serif_n4",
-        "label": "Heading 2"
-      },
-      {
-        "type": "number",
-        "id": "heading_scale_font2",
-        "label": "Header 2 Font Size",
-        "default": 1
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font3",
-        "default": "noto_serif_n4",
-        "label": "Heading 3"
-      },
-      {
-        "type": "number",
-        "id": "heading_scale_font3",
-        "label": "Header 3 Font Size",
-        "default": 1
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font4",
-        "default": "noto_serif_n4",
-        "label": "Heading 4"
-      },
-      {
-        "type": "number",
-        "id": "heading_scale_font5",
-        "label": "Header 5 Font Size",
-        "default": 1
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font6",
-        "default": "noto_serif_n4",
-        "label": "Heading 6"
-      },
-      {
-        "type": "number",
-        "id": "heading_scale_font4",
-        "label": "Header 6 Font Size",
-        "default": 1
+        "id": "heading_text_font",
+        "label": "Heading Font",
+        "default": "noto_serif_n4"
       },
       {
         "type": "font_picker",
@@ -99,8 +45,86 @@
       },
       {
         "type": "number",
-        "id": "body_font_size",
-        "label": "Body Font Size",
+        "id": "heading_font_mobile-1",
+        "label": "Header 1 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-2",
+        "label": "Header 2 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-3",
+        "label": "Header 3 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-4",
+        "label": "Header 4 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-5",
+        "label": "Header 5 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-6",
+        "label": "Header 6 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "body_font_mobile",
+        "label": "Body Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-1",
+        "label": "Header 1 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-2",
+        "label": "Header 2 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-3",
+        "label": "Header 3 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-4",
+        "label": "Header 4 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-5",
+        "label": "Header 5 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_desktop-6",
+        "label": "Header 6 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "body_font_desktop",
+        "label": "Body Desktop Font Size",
         "default": 1
       }
     ]
@@ -110,13 +134,25 @@
     "settings": [
       {
         "type": "number",
-        "id": "space_after_heading",
+        "id": "space_after_heading-mobile",
         "label": "Space after heading",
         "default": 1
       },
       {
         "type": "number",
-        "id": "space_after_paragraph",
+        "id": "space_after_paragraph-mobile",
+        "label": "Space after paragraph",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "space_after_heading-desktop",
+        "label": "Space after heading",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "space_after_paragraph-desktop",
         "label": "Space after paragraph",
         "default": 1
       }

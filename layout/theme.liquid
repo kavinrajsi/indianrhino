@@ -49,13 +49,13 @@ assign body_font = settings.body_text_font
     :root {
         --heading-font: {{ header_font_bold.family }};
         --body-font: {{ body_font.family }};
-        --font-h1: {{ settings.type_header_font1 }}rem;
-        --font-h2: {{ settings.type_header_font2 }}rem;
-        --font-h3: {{ settings.type_header_font3 }}rem;
-        --font-h4: {{ settings.type_header_font4 }}rem;
-        --font-h5: {{ settings.type_header_font5 }}rem;
-        --font-h6: {{ settings.type_header_font6 }}rem;
-        --font-body: {{ settings.body_text_font }}rem;
+        --font-h1: {{ settings.heading_scale_font1 }}rem;
+        --font-h2: {{ settings.heading_scale_font2 }}rem;
+        --font-h3: {{ settings.heading_scale_font3 }}rem;
+        --font-h4: {{ settings.heading_scale_font4 }}rem;
+        --font-h5: {{ settings.heading_scale_font5 }}rem;
+        --font-h6: {{ settings.heading_scale_font6 }}rem;
+        --font-body: {{ settings.body_font_size }}rem;
         --space-after-heading: {{ settings.space_after_heading }}rem;
         --space-after-paragraph: {{ settings.space_after_paragraph }}rem;
     }

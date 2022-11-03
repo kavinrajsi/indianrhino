@@ -67,7 +67,7 @@ a:not([href]):not([class]):hover {
       }
     }
     p {
-      font-family:var(--body-font);
+      font-family: var(--body-font);
       @media (min-width: 992px) {
         max-width: 280px;
         font-size: 22px;

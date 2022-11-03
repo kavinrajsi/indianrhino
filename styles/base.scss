@@ -60,9 +60,9 @@ a:not([href]):not([class]):hover {
     }
     h2 {
       font-family: var(--heading-font);
-      line-height: 1.4;
       font-size: var(--font-h2);
       padding-bottom: var(--space-after-heading);
+      line-height: 1.4;
       @media (min-width: 992px) {
         max-width: 280px;
         font-size: 40px;

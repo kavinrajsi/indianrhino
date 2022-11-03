@@ -405,7 +405,9 @@ a:not([href]):not([class]):hover {
 }
 .area-text h2 {
   font-family: var(--heading-font);
-  font-size: 1.75rem;
+  font-size: var(--font-h2);
+  padding-bottom: var(--space-after-heading);
+  line-height: 1.4;
 }
 @media (min-width: 992px) {
   .area-text h2 {
@@ -415,11 +417,12 @@ a:not([href]):not([class]):hover {
 }
 .area-text p {
   font-family: var(--body-font);
+  padding-bottom: var(--space-after-paragraph);
+  font-size: var(--font-body);
 }
 @media (min-width: 992px) {
   .area-text p {
     max-width: 280px;
-    font-size: 22px;
     line-height: 30px;
     text-align: left;
   }

@@ -40,7 +40,15 @@ assign body_font = settings.body_text_font
     {% style %}
     {{ header_font | font_face: font_display: 'swap' }}
     {{ body_font | font_face: font_display: 'swap' }}
+    {%- assign header_font_bold = header_font | font_modify: 'weight', 'bolder' -%}
+    {%- assign body_font = body_font -%}
+
+    {{ header_font | font_face }}
+    {{ body_font | font_face }}
+    {{ settings.type_header_font1 | json }}
     :root {
+        --heading-font: {{ header_font.family }};
+        --body-font: {{ base_font.family }};
         --font-h1: {{ settings.type_header_font1 }}rem;
         --font-h2: {{ settings.type_header_font2 }}rem;
         --font-h3: {{ settings.type_header_font3 }}rem;

@@ -61,12 +61,11 @@ a:not([href]):not([class]):hover {
       padding-left: 30px;
     }
     h2 {
-      font-family: "Gotham", sans-serif;
+      font-family: var(--font-h1);
       font-size: 1.75rem;
       @media (min-width: 992px) {
         max-width: 280px;
         font-size: 40px;
-        font-family: "Gotham", sans-serif;
       }
     }
     p {

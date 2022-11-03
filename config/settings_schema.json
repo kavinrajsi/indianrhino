@@ -45,44 +45,14 @@
       },
       {
         "type": "number",
+        "id": "font_break_point",
+        "label": "Font break point",
+        "default": 1
+      },
+      {
+        "type": "number",
         "id": "heading_font_mobile-1",
         "label": "Header 1 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "heading_font_mobile-2",
-        "label": "Header 2 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "heading_font_mobile-3",
-        "label": "Header 3 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "heading_font_mobile-4",
-        "label": "Header 4 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "heading_font_mobile-5",
-        "label": "Header 5 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "heading_font_mobile-6",
-        "label": "Header 6 Mobile Font Size",
-        "default": 1
-      },
-      {
-        "type": "number",
-        "id": "body_font_mobile",
-        "label": "Body Mobile Font Size",
         "default": 1
       },
       {
@@ -93,8 +63,20 @@
       },
       {
         "type": "number",
+        "id": "heading_font_mobile-2",
+        "label": "Header 2 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
         "id": "heading_font_desktop-2",
         "label": "Header 2 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-3",
+        "label": "Header 3 Mobile Font Size",
         "default": 1
       },
       {
@@ -105,8 +87,20 @@
       },
       {
         "type": "number",
+        "id": "heading_font_mobile-4",
+        "label": "Header 4 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
         "id": "heading_font_desktop-4",
         "label": "Header 4 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "heading_font_mobile-5",
+        "label": "Header 5 Mobile Font Size",
         "default": 1
       },
       {
@@ -117,8 +111,20 @@
       },
       {
         "type": "number",
+        "id": "heading_font_mobile-6",
+        "label": "Header 6 Mobile Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
         "id": "heading_font_desktop-6",
         "label": "Header 6 Desktop Font Size",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "body_font_mobile",
+        "label": "Body Mobile Font Size",
         "default": 1
       },
       {
